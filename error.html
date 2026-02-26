@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Error — Inquiry Not Received</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* =========================
+   ERROR PAGE — MIN CSS
+   ========================= */
+
+:root{
+  --bg-6:#2d95ee; 
+  --bg-7:#166fcb;
+  --ink:#08243f; 
+  --ink-soft:rgba(8,36,63,.78);
+  --container:min(1180px, calc(100vw - 2rem));
+  --nav-h:76px;
+
+  /* Soft error reds (fit palette) */
+  --error-bg:#fff1f3;
+  --error-accent:#ffccd5;
+  --error-border:#ff9aa8;
+  --error-strong:#e05263;
+}
+
+*{ box-sizing:border-box; }
+body{
+  margin:0;
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(900px 600px at 80% -10%, rgba(255,204,213,.35), transparent 60%),
+    radial-gradient(900px 600px at 10% 90%, rgba(255,154,168,.25), transparent 60%),
+    linear-gradient(180deg, #fff6f8 0%, #ffeef2 100%);
+}
+
+.container{ width:var(--container); margin:auto; }
+a{ text-decoration:none; color:inherit; }
+
+/* Header */
+.site-header{
+  height:var(--nav-h);
+  display:flex; align-items:center;
+  background:rgba(255,255,255,.7);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(224,82,99,.15);
+}
+.nav{
+  width:var(--container);
+  margin:auto;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.brand strong{ font-size:1rem; }
+
+/* Layout */
+.error{
+  min-height:calc(100vh - var(--nav-h));
+  display:grid;
+  place-items:center;
+  padding:2rem 1rem;
+}
+
+.error-card{
+  max-width:720px;
+  text-align:center;
+  padding:clamp(1.8rem, 4vw, 3rem);
+  border-radius:28px;
+  background:var(--error-bg);
+  border:1px solid var(--error-border);
+  box-shadow:0 20px 60px rgba(224,82,99,.12);
+}
+
+.error-icon{
+  width:64px;
+  height:64px;
+  margin:0 auto 1.2rem;
+  border-radius:20px;
+  background:linear-gradient(135deg, var(--error-accent), var(--error-border));
+  display:grid;
+  place-items:center;
+  box-shadow:0 12px 30px rgba(224,82,99,.18);
+}
+
+.error-title{
+  margin:0;
+  font-size:clamp(2rem, 3vw, 3rem);
+  color:var(--error-strong);
+  letter-spacing:-.03em;
+}
+
+.error-text{
+  margin:1rem auto 0;
+  max-width:60ch;
+  color:rgba(120,30,40,.8);
+  line-height:1.6;
+  font-size:1.05rem;
+}
+
+/* Buttons */
+.actions{
+  margin-top:1.8rem;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:.8rem;
+}
+
+.btn{
+  padding:.9rem 1.2rem;
+  border-radius:999px;
+  font-weight:600;
+  transition:.25s ease;
+}
+
+.btn-whatsapp{
+  background:linear-gradient(135deg, #30cf70, #17b75a);
+  color:#fff;
+  box-shadow:0 12px 28px rgba(17,149,74,.2);
+}
+.btn-whatsapp:hover{ transform:translateY(-2px); }
+
+.btn-email{
+  background:white;
+  border:1px solid var(--error-border);
+  color:var(--error-strong);
+}
+.btn-email:hover{
+  background:var(--error-accent);
+  transform:translateY(-2px);
+}
+
+.footer-note{
+  margin-top:1.5rem;
+  font-size:.9rem;
+  color:rgba(120,30,40,.7);
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="nav">
+    <div class="brand">
+      <strong>Fiftyshadesofblue.ma</strong>
+    </div>
+  </div>
+</header>
+
+<main class="error">
+  <div class="error-card">
+
+    <div class="error-icon">
+      <!-- Simple X icon -->
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+        <path d="M6 6L18 18M18 6L6 18" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <h1 class="error-title">
+      Something went wrong.
+    </h1>
+
+    <p class="error-text">
+      Your inquiry was <strong>not successfully received</strong>.  
+      Please send your request directly via WhatsApp or email and we will respond as soon as possible.
+    </p>
+
+    <div class="actions">
+      <a class="btn btn-whatsapp"
+         href="https://wa.me/212621919370"
+         target="_blank">
+         Send via WhatsApp
+      </a>
+
+      <a class="btn btn-email"
+         href="mailto:info@fiftyshadesofblue.ma?subject=Inquiry%20Submission%20Issue">
+         Send via Email
+      </a>
+    </div>
+
+    <p class="footer-note">
+      We apologise for the inconvenience — we’re here to help you plan your journey.
+    </p>
+
+  </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,2293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R78QGZECQ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-R78QGZECQ9');
+</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fiftyshadesofblue.ma — From the Blue City to Morocco in Every Shade</title>
+  <meta name="description" content="Chefchaouen-based Moroccan travel agency crafting premium itineraries from the Blue City to Akchour, Fes, Rabat, Marrakech, and the Sahara." />
+  <style>
+    :root {
+      --bg-0: #eef8ff;
+      --bg-1: #e3f3ff;
+      --bg-2: #d2ecff;
+      --bg-3: #b3deff;
+      --bg-4: #8dcbff;
+      --bg-5: #5eb2ff;
+      --bg-6: #2d95ee;
+      --bg-7: #166fcb;
+      --ink: #08243f;
+      --ink-soft: rgba(8, 36, 63, 0.78);
+      --line: rgba(15, 95, 166, 0.16);
+      --card: rgba(255,255,255,0.56);
+      --card-strong: rgba(255,255,255,0.72);
+      --glass: rgba(255,255,255,0.42);
+      --shadow: 0 16px 60px rgba(12, 66, 120, 0.14);
+      --shadow-strong: 0 22px 80px rgba(12, 66, 120, 0.18);
+      --sand: #d6b26a;
+      --radius: 22px;
+      --radius-xl: 34px;
+      --container: min(1180px, calc(100vw - 2rem));
+      --nav-h: 76px;
+      --cursor-x: 50%;
+      --cursor-y: 30%;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 700px at 85% -5%, rgba(94,178,255,0.22), transparent 65%),
+        radial-gradient(900px 600px at 5% 25%, rgba(141,203,255,0.22), transparent 65%),
+        linear-gradient(180deg, #f4fbff 0%, #eaf7ff 30%, #edf9ff 60%, #f3fbff 100%);
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    button, input, select, textarea { font: inherit; color: inherit; }
+    .container { width: var(--container); margin-inline: auto; }
+
+    .top-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      z-index: 200;
+      background: rgba(255,255,255,0.25);
+      backdrop-filter: blur(6px);
+    }
+    .top-progress__bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--bg-6), var(--bg-4), var(--sand));
+      box-shadow: 0 0 16px rgba(45,149,238,0.35);
+      transition: width 0.08s linear;
+    }
+
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 120;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      transition: background 0.35s ease, border-color 0.35s ease, backdrop-filter 0.35s ease;
+      border-bottom: 1px solid transparent;
+    }
+    .site-header.is-scrolled {
+      background: rgba(241, 250, 255, 0.72);
+      border-bottom-color: rgba(15,95,166,0.12);
+      backdrop-filter: blur(16px) saturate(140%);
+    }
+    .nav {
+      width: var(--container);
+      margin-inline: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      min-width: 0;
+    }
+    .brand-badge {
+      width: 38px;
+      height: 38px;
+      border-radius: 13px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,0.78), rgba(255,255,255,0.35)),
+        linear-gradient(220deg, var(--bg-6), var(--bg-4), var(--bg-7));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), 0 10px 26px rgba(22,111,203,0.2);
+      position: relative;
+      overflow: hidden;
+    }
+    .brand-badge::before,
+    .brand-badge::after {
+      content: "";
+      position: absolute;
+      inset: auto auto 0 0;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background: conic-gradient(from 180deg, transparent 0 40%, rgba(255,255,255,0.45) 50%, transparent 65%);
+      transform: translate(-25%, 25%) rotate(12deg);
+      opacity: 0.8;
+      animation: shimmer 8s linear infinite;
+    }
+    .brand-badge::after { animation-duration: 11s; transform: translate(15%, -25%) rotate(-20deg); opacity: 0.55; }
+    .brand-name {
+      display: flex;
+      flex-direction: column;
+      line-height: 1;
+    }
+    .brand-name strong {
+      font-size: 0.98rem;
+      letter-spacing: 0.01em;
+    }
+    .brand-name span {
+      font-size: 0.72rem;
+      opacity: 0.75;
+      margin-top: 0.25rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: rgba(255,255,255,0.42);
+      border: 1px solid rgba(15,95,166,0.1);
+      border-radius: 999px;
+      padding: 0.35rem;
+      box-shadow: 0 8px 30px rgba(12,66,120,0.08);
+      backdrop-filter: blur(10px);
+    }
+    .nav-links a {
+      padding: 0.6rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+      transition: background 0.25s ease, transform 0.25s ease;
+      white-space: nowrap;
+    }
+    .nav-links a:hover {
+      background: rgba(255,255,255,0.75);
+      transform: translateY(-1px);
+    }
+    .nav-actions {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      padding: 0.78rem 1.05rem;
+      cursor: pointer;
+      transition: transform 0.28s ease, box-shadow 0.28s ease, background 0.28s ease, border-color 0.28s ease;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--bg-6), var(--bg-7));
+      color: white;
+      box-shadow: 0 12px 28px rgba(22,111,203,0.22);
+    }
+    .btn-primary:hover { box-shadow: 0 18px 40px rgba(22,111,203,0.26); }
+    .btn-secondary {
+      background: rgba(255,255,255,0.65);
+      border-color: rgba(15,95,166,0.14);
+      color: var(--ink);
+      box-shadow: 0 8px 24px rgba(12,66,120,0.08);
+    }
+    .btn-secondary:hover { background: rgba(255,255,255,0.86); }
+    .btn-whatsapp {
+      background: linear-gradient(135deg, #30cf70, #17b75a);
+      color: #fff;
+      box-shadow: 0 12px 28px rgba(17, 149, 74, 0.2);
+    }
+
+    .panel {
+      min-height: 100svh;
+      display: grid;
+      align-items: center;
+      position: relative;
+      overflow: clip;
+      border-top: 1px solid rgba(255,255,255,0.55);
+    }
+    .panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(180deg, rgba(255,255,255,0.28), transparent 20%, transparent 80%, rgba(255,255,255,0.16));
+      opacity: 0.85;
+    }
+    .panel .container { position: relative; z-index: 2; }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.55rem 0.8rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.55);
+      border: 1px solid rgba(15,95,166,0.1);
+      font-size: 0.84rem;
+      color: var(--ink-soft);
+      box-shadow: 0 10px 28px rgba(12,66,120,0.06);
+      backdrop-filter: blur(8px);
+    }
+    .eyebrow-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 30%, #fff, var(--bg-6));
+      box-shadow: 0 0 0 4px rgba(45,149,238,0.12);
+    }
+
+    .section-title {
+      margin: 0;
+      font-size: clamp(2rem, 3vw + 1rem, 4rem);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+    }
+    .section-title .soft { color: rgba(8,36,63,0.68); font-weight: 500; }
+    .lead {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: clamp(1rem, 1.1vw + 0.8rem, 1.25rem);
+      line-height: 1.55;
+      max-width: 64ch;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.9s cubic-bezier(.2,.75,.2,1), transform 0.9s cubic-bezier(.2,.75,.2,1);
+    }
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* HERO */
+    .hero {
+      padding-top: calc(var(--nav-h) + 1rem);
+      background:
+        radial-gradient(700px 420px at var(--cursor-x) var(--cursor-y), rgba(94,178,255,0.23), transparent 60%),
+        radial-gradient(1000px 520px at 90% 15%, rgba(94,178,255,0.12), transparent 62%),
+        radial-gradient(800px 520px at 10% 75%, rgba(141,203,255,0.14), transparent 60%),
+        linear-gradient(180deg, #eff9ff 0%, #e6f5ff 42%, #edf9ff 100%);
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 0.95fr;
+      align-items: center;
+      gap: clamp(1rem, 3vw, 2rem);
+      min-height: calc(100svh - var(--nav-h));
+
+    }
+    .hero-copy {
+      display: grid;
+      gap: 1rem;
+      align-content: center;
+    }
+    .hero-title {
+      margin: 0;
+      font-size: clamp(2.45rem, 6vw, 6.2rem);
+      line-height: 0.9;
+      letter-spacing: -0.045em;
+      max-width: 14ch;
+      position: relative;
+    }
+    .hero-title .line {
+      display: block;
+      position: relative;
+    }
+    .hero-title .line:nth-child(1) { color: var(--ink); }
+    .hero-title .line:nth-child(2) {
+      color: transparent;
+      background: linear-gradient(120deg, var(--bg-7), var(--bg-5), var(--bg-6));
+      background-clip: text;
+      -webkit-background-clip: text;
+      filter: drop-shadow(0 10px 20px rgba(22,111,203,0.12));
+    }
+    .hero-title .line:nth-child(3) { color: rgba(8,36,63,0.72); }
+
+    .hero-sub {
+      margin: 0;
+      max-width: 58ch;
+      color: var(--ink-soft);
+      font-size: clamp(1rem, 1.1vw + 0.8rem, 1.2rem);
+      line-height: 1.6;
+    }
+    .hero-cta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      margin-top: 0.25rem;
+    }
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+      margin-top: 0.25rem;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.55rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(15,95,166,0.1);
+      background: rgba(255,255,255,0.5);
+      color: rgba(8,36,63,0.8);
+      font-size: 0.85rem;
+      box-shadow: 0 8px 18px rgba(12,66,120,0.05);
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: min(80svh, 760px);
+      display: grid;
+      place-items: center;
+    }
+    .hero-orb {
+      position: absolute;
+      width: min(62vw, 640px);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 30% 35%, rgba(255,255,255,0.75), rgba(255,255,255,0.18) 24%, rgba(94,178,255,0.1) 55%, transparent 68%),
+        radial-gradient(circle at 60% 65%, rgba(141,203,255,0.35), rgba(45,149,238,0.1) 45%, transparent 65%);
+      filter: blur(1px);
+      opacity: 0.9;
+      animation: pulseFloat 16s ease-in-out infinite;
+    }
+    .stack {
+      position: relative;
+      width: min(92%, 560px);
+      aspect-ratio: 4 / 5;
+    }
+    .floating-label {
+      position: absolute;
+      padding: 0.55rem 0.75rem;
+      border-radius: 14px;
+      background: rgba(255,255,255,0.74);
+      border: 1px solid rgba(15,95,166,0.1);
+      box-shadow: var(--shadow);
+      font-size: 0.84rem;
+      color: rgba(8,36,63,0.8);
+      backdrop-filter: blur(10px);
+      animation: drift 10s ease-in-out infinite;
+      z-index: 5;
+    }
+    .floating-label small { display: block; opacity: 0.66; font-size: 0.72rem; margin-top: 0.15rem; }
+    .floating-label.one { top: 7%; left: -3%; }
+    .floating-label.two { bottom: 14%; right: -6%; animation-delay: -3s; }
+    .floating-label.three { top: 48%; right: -10%; animation-delay: -6s; }
+
+    .ph {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius);
+      border: 1px solid rgba(15,95,166,0.12);
+      box-shadow: var(--shadow);
+      background:
+        linear-gradient(135deg, rgba(255,255,255,0.45), rgba(255,255,255,0.2)),
+        linear-gradient(160deg, rgba(141,203,255,0.65), rgba(94,178,255,0.55) 38%, rgba(45,149,238,0.62));
+      isolation: isolate;
+    }
+    .ph::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(120deg, rgba(255,255,255,0) 5%, rgba(255,255,255,0.23) 5%, rgba(255,255,255,0) 30%);
+      animation: shimmer 9s linear infinite;
+      z-index: -1;
+    }
+    .ph::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px);
+      background-size: 26px 26px;
+      opacity: 0.18;
+      mix-blend-mode: soft-light;
+    }
+    .ph__inner {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      align-content: end;
+      padding: 1rem;
+      gap: 0.45rem;
+      color: #fff;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    }
+    .ph__title {
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      font-size: clamp(0.95rem, 1vw + 0.7rem, 1.15rem);
+    }
+    .ph__hint {
+      font-size: 0.8rem;
+      line-height: 1.35;
+      opacity: 0.95;
+      max-width: 36ch;
+    }
+    .ph[data-parallax] {
+      will-change: transform;
+      transform: translate3d(0, 0, 0);
+      transition: transform 0.16s linear;
+    }
+
+    .hero-card-a,
+    .hero-card-b,
+    .hero-card-c {
+      position: absolute;
+      backdrop-filter: blur(12px);
+    }
+    .hero-card-a {
+      inset: 7% 30% 18% -2%;
+      transform: rotate(-5deg);
+      z-index: 3;
+    }
+    .hero-card-b {
+      inset: 0% -17% 67% 60%;
+      border-radius: 18px;
+      z-index: 2;
+      transform: rotate(2deg);
+
+    }
+    .hero-card-c {
+      inset: 55% -12% 10% 45%;
+      transform: rotate(8deg);
+      z-index: 4;
+    }
+@media (max-width: 768px) {
+
+  .hero-card-a {
+    inset: 7% 18% 18% 8%;   /* was 30% / -2% */
+    transform: rotate(-4deg);
+    z-index: 3;
+  }
+
+  .hero-card-b {
+    inset: 0% 10% 67% 40%;  /* was -17% / 60% */
+    border-radius: 18px;
+    z-index: 2;
+    transform: rotate(2deg);
+  }
+
+  .hero-card-c {
+    inset: 55% 8% 10% 35%;  /* was -12% / 45% */
+    transform: rotate(6deg);
+    z-index: 4;
+  }
+
+}
+    .scroll-cue {
+      position: absolute;
+      left: 50%;
+      bottom: 1rem;
+      transform: translateX(-50%);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.45rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.56);
+      border: 1px solid rgba(15,95,166,0.1);
+      color: rgba(8,36,63,0.75);
+      font-size: 0.8rem;
+      box-shadow: var(--shadow);
+      animation: bob 2.8s ease-in-out infinite;
+      z-index: 20;
+      backdrop-filter: blur(10px);
+    }
+    .scroll-cue i {
+      width: 16px;
+      height: 16px;
+      border: 2px solid currentColor;
+      border-top: 0;
+      border-left: 0;
+      transform: rotate(45deg) translateY(-1px);
+      display: inline-block;
+    }
+
+    .marquee {
+      border-top: 1px solid rgba(15,95,166,0.1);
+      border-bottom: 1px solid rgba(15,95,166,0.1);
+      background: rgba(255,255,255,0.46);
+      backdrop-filter: blur(10px);
+      overflow: hidden;
+    }
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 34s linear infinite;
+      will-change: transform;
+      padding: 0.8rem 0;
+      gap: 0.9rem;
+    }
+    .marquee-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.9rem;
+      font-size: 0.92rem;
+      color: rgba(8,36,63,0.82);
+      white-space: nowrap;
+    }
+    .marquee-item::after {
+      content: "•";
+      color: rgba(45,149,238,0.75);
+      font-size: 1rem;
+    }
+
+    /* GENERIC CARDS */
+    .glass-card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.64), rgba(255,255,255,0.44));
+      border: 1px solid rgba(15,95,166,0.1);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+      border-radius: var(--radius-xl);
+    }
+
+    /* BASECAMP */
+    .basecamp {
+      background:
+        radial-gradient(700px 420px at 5% 15%, rgba(94,178,255,0.15), transparent 62%),
+        radial-gradient(900px 600px at 85% 85%, rgba(141,203,255,0.18), transparent 60%),
+        linear-gradient(180deg, #edf8ff, #e5f5ff);
+    }
+    .basecamp-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 1rem;
+      align-items: stretch;
+      padding-block: clamp(1.2rem, 4vh, 2.5rem);
+    }
+    .basecamp-copy {
+      padding: clamp(1.1rem, 2vw, 1.6rem);
+      display: grid;
+      align-content: start;
+      gap: 0.9rem;
+    }
+    .basecamp-copy p { margin: 0; color: var(--ink-soft); line-height: 1.55; }
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.55rem;
+      margin-top: 0.35rem;
+    }
+    .stat {
+      border-radius: 18px;
+      padding: 0.9rem;
+      background: rgba(255,255,255,0.58);
+      border: 1px solid rgba(15,95,166,0.1);
+    }
+    .stat strong {
+      display: block;
+      font-size: 1.05rem;
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+    .stat span {
+      display: block;
+      color: rgba(8,36,63,0.74);
+      font-size: 0.78rem;
+      line-height: 1.35;
+    }
+
+    .route-map {
+      position: relative;
+      padding: clamp(1rem, 2vw, 1.35rem);
+      display: grid;
+      gap: 0.75rem;
+      align-content: start;
+    }
+    .route-line {
+      position: relative;
+      min-height: 250px;
+      border-radius: 22px;
+      border: 1px dashed rgba(15,95,166,0.18);
+      background: linear-gradient(180deg, rgba(255,255,255,0.44), rgba(255,255,255,0.26));
+      overflow: hidden;
+    }
+    .route-line svg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .route-tag {
+      position: absolute;
+      padding: 0.45rem 0.65rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.85);
+      border: 1px solid rgba(15,95,166,0.12);
+      box-shadow: 0 8px 20px rgba(12,66,120,0.08);
+      font-size: 0.78rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    .route-tag small { opacity: 0.65; font-weight: 500; }
+    .tag-chef { top: 5%; left: 12%; }
+    .tag-akch { top: 35%; left: 5%; }
+    .tag-fes  { top: 31%; left: 57%; }
+    .tag-rabat{ top: 63%; left: 22%; }
+    .tag-marr { top: 60%; left: 68%; }
+    .tag-saha { top: 99%; left: 75%; transform: translate(-50%, -100%); }
+
+.basecamp-mosaic{
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  column-gap: 0.75rem;
+  row-gap: 0.75rem;
+  min-height: 360px;
+  overflow: visible; /* important: don't clip parallax/spacing */
+}
+
+.mosaic-col{
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* two stacked slots */
+  gap: 1.5rem;               /* ✅ breathing room */
+  overflow: visible;          /* avoid clipping */
+}
+
+/* optional: ensure each right card has a sensible height */
+.mosaic-col .ph{
+  min-height: 150px;
+  
+} 
+    /* ROUTES */
+    .routes {
+      background:
+        radial-gradient(700px 420px at 92% 10%, rgba(94,178,255,0.15), transparent 62%),
+        radial-gradient(800px 500px at 8% 82%, rgba(45,149,238,0.12), transparent 65%),
+        linear-gradient(180deg, #eaf7ff, #e1f2ff);
+      padding-block: 1.25rem;
+    }
+    .routes-wrap {
+      display: grid;
+      gap: 0.9rem;
+      align-content: center;
+      padding-block: clamp(1rem, 4vh, 2rem);
+    }
+    .routes-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .routes-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+    .route-card {
+      position: relative;
+      padding: 0.85rem;
+      border-radius: 24px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.62), rgba(255,255,255,0.46));
+      border: 1px solid rgba(15,95,166,0.1);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+      display: grid;
+      gap: 0.8rem;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+      overflow: hidden;
+    }
+    .route-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-strong);
+    }
+    .route-card .thumb { height: 220px; }
+    .route-card .thumb .ph__hint { max-width: 28ch; }
+    .route-card h3 {
+      margin: 0;
+      font-size: 1.05rem;
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+    .route-card p {
+      margin: 0;
+      color: var(--ink-soft);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+    .route-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+    }
+    .route-meta span {
+      font-size: 0.75rem;
+      padding: 0.42rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.62);
+      border: 1px solid rgba(15,95,166,0.09);
+      color: rgba(8,36,63,0.78);
+    }
+
+    /* DESTINATION STORY PANELS */
+    .story {
+      padding-block: clamp(1rem, 4vh, 2rem);
+    }
+    .story:nth-of-type(odd) {
+      background:
+        radial-gradient(700px 440px at 8% 18%, rgba(141,203,255,0.18), transparent 60%),
+        linear-gradient(180deg, #eef9ff, #e6f5ff);
+    }
+    .story:nth-of-type(even) {
+      background:
+        radial-gradient(700px 440px at 88% 80%, rgba(94,178,255,0.14), transparent 62%),
+        linear-gradient(180deg, #e8f6ff, #e2f2ff);
+    }
+    .story-layout {
+      display: grid;
+      grid-template-columns: 1.02fr 0.98fr;
+      gap: 1rem;
+      align-items: center;
+    }
+    .story-layout.reverse {
+      grid-template-columns: 0.98fr 1.02fr;
+    }
+    .story-copy {
+      display: grid;
+      gap: 0.85rem;
+      align-content: center;
+      padding: 0.2rem 0.15rem;
+    }
+    .story-copy h2 {
+      margin: 0;
+      font-size: clamp(2rem, 2.4vw + 1rem, 3.5rem);
+      line-height: 0.93;
+      letter-spacing: -0.03em;
+    }
+    .story-copy p {
+      margin: 0;
+      color: var(--ink-soft);
+      line-height: 1.58;
+      font-size: clamp(0.95rem, 0.7vw + 0.78rem, 1.08rem);
+      max-width: 55ch;
+    }
+    .story-points {
+      display: grid;
+      gap: 0.45rem;
+      margin-top: 0.1rem;
+    }
+    .story-points span {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      width: fit-content;
+      padding: 0.55rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.58);
+      border: 1px solid rgba(15,95,166,0.1);
+      font-size: 0.84rem;
+      color: rgba(8,36,63,0.8);
+    }
+    .story-points span::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: linear-gradient(180deg, var(--bg-5), var(--bg-7));
+      box-shadow: 0 0 0 4px rgba(45,149,238,0.12);
+    }
+    .story-visual {
+      display: grid;
+      grid-template-columns: 1fr 0.78fr;
+      gap: 0.75rem;
+      min-height: 62vh;
+      align-items: stretch;
+    }
+    .story-visual .main { min-height: 62vh; }
+    .story-visual .side {
+      display: grid;
+      gap: 2rem;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    /* PROCESS / BRAND FEEL */
+    .process {
+      background:
+        radial-gradient(800px 520px at 86% 15%, rgba(94,178,255,0.15), transparent 62%),
+        radial-gradient(700px 440px at 10% 78%, rgba(141,203,255,0.15), transparent 62%),
+        linear-gradient(180deg, #edf8ff, #e6f4ff);
+      padding-block: 1.2rem;
+    }
+    .process-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 1rem;
+      align-items: stretch;
+      padding-block: clamp(1rem, 4vh, 2rem);
+    }
+    .process-copy {
+      padding: clamp(1rem, 2vw, 1.4rem);
+      display: grid;
+      gap: 0.9rem;
+    }
+    .steps {
+      display: grid;
+      gap: 0.75rem;
+    }
+    .step {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 0.8rem;
+      align-items: start;
+      padding: 0.75rem;
+      border-radius: 18px;
+      border: 1px solid rgba(15,95,166,0.09);
+      background: rgba(255,255,255,0.5);
+    }
+    .step-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: white;
+      background: linear-gradient(135deg, var(--bg-6), var(--bg-7));
+      box-shadow: 0 8px 18px rgba(22,111,203,0.2);
+    }
+    .step h4 {
+      margin: 0;
+      font-size: 0.95rem;
+      letter-spacing: -0.01em;
+    }
+    .step p {
+      margin: 0.25rem 0 0;
+      color: var(--ink-soft);
+      font-size: 0.86rem;
+      line-height: 1.45;
+    }
+
+    .process-visual {
+      position: relative;
+      display: grid;
+      gap: 0.75rem;
+      align-content: start;
+      padding: clamp(1rem, 2vw, 1.35rem);
+    }
+
+    .micro-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.6rem;
+    }
+    .micro-card {
+      border-radius: 16px;
+      padding: 0.75rem;
+      background: rgba(255,255,255,0.54);
+      border: 1px solid rgba(15,95,166,0.09);
+      min-height: 92px;
+      display: grid;
+      align-content: start;
+      gap: 0.25rem;
+    }
+    .micro-card strong { font-size: 0.88rem; }
+    .micro-card span { font-size: 0.78rem; color: var(--ink-soft); line-height: 1.35; }
+
+    /* CONTACT */
+    .contact {
+      background:
+        radial-gradient(900px 560px at 10% 10%, rgba(141,203,255,0.22), transparent 62%),
+        radial-gradient(900px 560px at 90% 90%, rgba(94,178,255,0.18), transparent 62%),
+        linear-gradient(180deg, #e8f6ff, #dff1ff);
+      padding-block: clamp(1rem, 4vh, 2.2rem);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 1rem;
+      align-items: stretch;
+      padding-block: clamp(0.8rem, 3vh, 1.8rem);
+    }
+    .contact-left,
+    .contact-right {
+      padding: clamp(1rem, 2vw, 1.4rem);
+      display: grid;
+      gap: 0.9rem;
+      align-content: start;
+    }
+    .contact-left p,
+    .contact-right p { margin: 0; color: var(--ink-soft); line-height: 1.55; }
+
+    .contact-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: 0.25rem;
+    }
+    .imad-card {
+      border-radius: 18px;
+      padding: 0.9rem;
+      background: rgba(255,255,255,0.55);
+      border: 1px solid rgba(15,95,166,0.09);
+      display: grid;
+      gap: 0.45rem;
+    }
+    .imad-card strong { font-size: 0.95rem; }
+    .imad-card .small { font-size: 0.82rem; color: var(--ink-soft); }
+    .imad-card .line {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.85rem;
+      color: rgba(8,36,63,0.84);
+      flex-wrap: wrap;
+    }
+    .contact-visual {
+      min-height: 240px;
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 0.75rem;
+    }
+    .contact-visual .side { display: grid; gap: 0.75rem; grid-template-rows: 1fr 1fr; }
+
+    form {
+      display: grid;
+      gap: 0.7rem;
+      margin-top: 0.15rem;
+    }
+    .field-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.7rem;
+    }
+    .field {
+      display: grid;
+      gap: 0.35rem;
+    }
+    .field label {
+      font-size: 0.8rem;
+      color: rgba(8,36,63,0.75);
+      font-weight: 600;
+      letter-spacing: 0.01em;
+    }
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid rgba(15,95,166,0.14);
+      background: rgba(255,255,255,0.66);
+      padding: 0.78rem 0.85rem;
+      outline: none;
+      transition: border-color 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+      color: var(--ink);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+    }
+    .field textarea { min-height: 125px; resize: vertical; }
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: rgba(45,149,238,0.45);
+      box-shadow: 0 0 0 4px rgba(45,149,238,0.12);
+      background: rgba(255,255,255,0.82);
+    }
+    .form-note {
+      font-size: 0.78rem;
+      color: rgba(8,36,63,0.68);
+      line-height: 1.45;
+      background: rgba(255,255,255,0.5);
+      border: 1px dashed rgba(15,95,166,0.16);
+      border-radius: 14px;
+      padding: 0.75rem;
+    }
+    .form-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      align-items: center;
+    }
+    .muted-link {
+      font-size: 0.85rem;
+      color: rgba(8,36,63,0.72);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      text-decoration-color: rgba(8,36,63,0.25);
+    }
+
+    /* FOOTER */
+    footer {
+      position: relative;
+      padding: 1.2rem 0 2rem;
+      background: linear-gradient(180deg, #e0f2ff, #d8eeff);
+      border-top: 1px solid rgba(15,95,166,0.12);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 1rem;
+      align-items: start;
+    }
+    .footer-title {
+      margin: 0;
+      font-size: clamp(1.5rem, 2vw + 1rem, 2.4rem);
+      line-height: 0.95;
+      letter-spacing: -0.03em;
+    }
+    .footer-copy {
+      margin: 0.55rem 0 0;
+      color: var(--ink-soft);
+      line-height: 1.5;
+      max-width: 58ch;
+    }
+    .footer-links {
+      display: grid;
+      gap: 0.4rem;
+      justify-items: start;
+      align-content: start;
+      padding-top: 0.15rem;
+    }
+    .footer-links a {
+      font-size: 0.92rem;
+      color: rgba(8,36,63,0.8);
+      text-decoration: underline;
+      text-decoration-color: rgba(8,36,63,0.2);
+      text-underline-offset: 3px;
+    }
+    .footer-bottom {
+      margin-top: 1rem;
+      padding-top: 0.9rem;
+      border-top: 1px solid rgba(15,95,166,0.08);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem 1rem;
+      justify-content: space-between;
+      color: rgba(8,36,63,0.64);
+      font-size: 0.82rem;
+    }
+
+    /* UTIL */
+    .kicker-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .mini-tag {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.38rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.55);
+      border: 1px solid rgba(15,95,166,0.08);
+      font-size: 0.75rem;
+      color: rgba(8,36,63,0.75);
+    }
+    .gradient-text {
+      color: transparent;
+      background: linear-gradient(120deg, var(--bg-7), var(--bg-5));
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    .hidden-mobile { display: inline-flex; }
+
+    @media (max-width: 1100px) {
+      .hero-grid,
+      .basecamp-grid,
+      .process-grid,
+      .contact-grid,
+      .story-layout,
+      .story-layout.reverse {
+        grid-template-columns: 1fr;
+      }
+      .hero-visual { min-height: 60svh; }
+      .routes-grid { grid-template-columns: 1fr; }
+      .route-card .thumb { height: 240px; }
+      .story-visual { min-height: 42svh; }
+      .story-visual .main { min-height: 42svh; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .tag-saha { left: 72%; }
+    }
+
+    @media (max-width: 840px) {
+      :root { --nav-h: 70px; }
+      .nav-links { display: none; }
+      .nav-actions .btn-secondary.hidden-mobile { display: none; }
+      .hero-title { max-width: 12ch; }
+      .basecamp-mosaic { grid-template-columns: 1fr; }
+      .basecamp-mosaic .ph:nth-child(1) { min-height: 280px; }
+      .mosaic-col { grid-template-rows: auto; }
+      .story-visual { grid-template-columns: 1fr; min-height: auto; }
+      .story-visual .main { min-height: 36svh; }
+      .story-visual .side { grid-template-rows: repeat(2, minmax(180px, 1fr)); }
+      .field-grid { grid-template-columns: 1fr; }
+      .contact-visual { grid-template-columns: 1fr; }
+      .contact-visual .side { grid-template-rows: repeat(2, minmax(160px, 1fr)); }
+      .stats-row { grid-template-columns: 1fr; }
+      .micro-grid { grid-template-columns: 1fr; }
+      .tag-chef { top: 14%; left: 7%; }
+      .tag-akch { top: 30%; left: 22%; }
+      .tag-fes { top: 43%; left: 48%; }
+      .tag-rabat { top: 63%; left: 36%; }
+      .tag-marr { top: 73%; left: 58%; }
+      .tag-saha { top: 84%; left: 68%; }
+      .scroll-cue { display: none; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .marquee-track { animation: none !important; }
+    }
+
+    @keyframes shimmer {
+      0% { transform: translateX(-18%) rotate(0deg); }
+      100% { transform: translateX(18%) rotate(360deg); }
+    }
+    @keyframes pulseFloat {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-10px) scale(1.02); }
+    }
+    @keyframes drift {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes bob {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50% { transform: translateX(-50%) translateY(-6px); }
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    /* Mini interactive hero gallery */
+.hero-mini-gallery{
+  width: min(560px, 94%);
+  margin: 0 auto;
+  display: grid;
+  gap: 12px;
+  pointer-events: auto;
+}
+
+.gallery-main{
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.55);
+  background: linear-gradient(135deg, rgba(134,197,255,.25), rgba(72,132,230,.18));
+  box-shadow: 0 18px 36px rgba(28, 82, 158, 0.16);
+    aspect-ratio: 16 / 10;
+}
+
+.gallery-main img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.01);
+  transition: transform .5s ease, filter .4s ease, opacity .35s ease;
+  filter: saturate(1.03) contrast(1.02);
+}
+
+.hero-mini-gallery:hover .gallery-main img{
+  transform: scale(1.03);
+}
+
+.gallery-main::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(to top, rgba(6, 24, 54, 0.48) 0%, rgba(6, 24, 54, 0.12) 38%, rgba(6, 24, 54, 0.02) 70%),
+    linear-gradient(135deg, rgba(117, 196, 255, 0.10), rgba(255,255,255,0.02));
+  pointer-events:none;
+}
+
+.gallery-overlay{
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  z-index: 2;
+  color: white;
+}
+
+.gallery-overlay span{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(10, 39, 85, 0.40);
+  border: 1px solid rgba(255,255,255,0.22);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.gallery-overlay p{
+  margin: 8px 0 0;
+  font-size: .86rem;
+  line-height: 1.35;
+  color: rgba(245, 250, 255, 0.95);
+  text-shadow: 0 1px 6px rgba(0,0,0,.18);
+}
+
+/* Thumbnail strip */
+.gallery-strip{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 88px;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 2px 2px 8px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(83, 144, 229, 0.5) transparent;
+}
+
+.gallery-strip::-webkit-scrollbar{
+  height: 8px;
+}
+.gallery-strip::-webkit-scrollbar-thumb{
+  background: rgba(83, 144, 229, 0.45);
+  border-radius: 999px;
+}
+
+.g-thumb{
+  position: relative;
+  border: 0;
+  padding: 0;
+  width: 88px;
+  height: 88px;
+  border-radius: 14px;
+  overflow: hidden;
+  cursor: pointer;
+  background: rgba(255,255,255,0.35);
+  border: 1px solid rgba(255,255,255,0.45);
+  box-shadow: 0 8px 16px rgba(27, 79, 155, 0.10);
+  transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease, opacity .22s ease;
+  flex: 0 0 auto;
+}
+
+.g-thumb img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display:block;
+  transition: transform .3s ease, filter .25s ease;
+}
+
+.g-thumb::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(8, 33, 74, 0.10));
+  pointer-events:none;
+}
+
+.g-thumb:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px rgba(27, 79, 155, 0.14);
+  border-color: rgba(255,255,255,0.62);
+}
+
+.g-thumb:hover img{
+  transform: scale(1.06);
+}
+
+.g-thumb.is-active{
+  border-color: rgba(130, 200, 255, 0.95);
+  box-shadow:
+    0 0 0 2px rgba(113, 188, 255, 0.28),
+    0 12px 22px rgba(28, 82, 158, 0.16);
+}
+
+.g-thumb.is-active::before{
+  content:"";
+  position:absolute;
+  inset:auto 8px 8px 8px;
+  height: 3px;
+  border-radius:999px;
+  background: linear-gradient(90deg, #7fd0ff, #4da8ff);
+  z-index: 2;
+}
+
+/* Responsive */
+@media (max-width: 640px){
+  .hero-mini-gallery{
+    width: 100%;
+    max-width: 420px;
+    gap: 10px;
+  }
+
+  .gallery-main{
+    border-radius: 16px;
+    aspect-ratio: 4 / 4.9;
+  }
+
+  .gallery-overlay{
+    left: 10px; right: 10px; bottom: 10px;
+  }
+
+  .gallery-overlay span{
+    font-size: .65rem;
+    padding: 5px 8px;
+  }
+
+  .gallery-overlay p{
+    font-size: .76rem;
+    margin-top: 6px;
+  }
+
+  .gallery-strip{
+    grid-auto-columns: 72px;
+    gap: 7px;
+  }
+
+  .g-thumb{
+    width: 72px;
+    height: 72px;
+    border-radius: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce){
+  .gallery-main img,
+  .g-thumb,
+  .g-thumb img{
+    transition: none !important;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="top-progress" aria-hidden="true"><div class="top-progress__bar" id="scrollBar"></div></div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="nav">
+      <a href="#top" class="brand" aria-label="Fiftyshadesofblue.ma home">
+        <span class="brand-name">
+          <strong>Fiftyshadesofblue.ma</strong>
+          <span>Chefchaouen, Morocco</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#basecamp">Basecamp</a>
+        <a href="#routes">Routes</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#contact">Plan your trip</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="btn btn-secondary hidden-mobile" href="#contact">Custom itinerary</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/212621919370?text=Salam%20Imad%20-%20I%20want%20to%20plan%20a%20Morocco%20trip%20with%20Fiftyshadesofblue.ma" target="_blank" rel="noopener noreferrer" aria-label="Message Imad Boulhajjaj on WhatsApp">
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="panel hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <h1 class="hero-title" id="hero-title">
+            <span class="line">From the</span>
+            <span class="line">Blue City</span>
+            <span class="line">to Morocco in every shade.</span>
+          </h1>
+
+          <p class="hero-sub">
+            Fiftyshadesofblue.ma designs curated Morocco itineraries rooted in <strong>Chefchaouen</strong> — flowing naturally into <strong>Akchour, Fes, Rabat, Marrakech, and the Sahara</strong> with a premium, cinematic travel rhythm.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Design my route</a>
+            <a href="#routes" class="btn btn-secondary">Explore signature journeys</a>
+          </div>
+
+        </div>
+
+        <div class="hero-visual reveal" aria-label="Visual placeholders for destination imagery">
+          <div class="hero-orb" aria-hidden="true"></div>
+          <div class="stack">
+            <div class="ph hero-card-a real-photo" data-parallax data-speed="0.0" role="img" aria-label="Chefchaouen alley at blue hour"
+              style="background-image:url('images/chaouen-hero.jpg'); background-size:cover; background-position:center;">
+            </div>
+            <!-- Replace with Akchour waterfalls or forest path, cool tones, movement in water -->
+            <div class="ph hero-card-b real-photo" data-parallax data-speed="0.0" role="img" aria-label="Akchour"
+              style="background-image:url('images/akchour-hero.jpg'); background-size:cover; background-position:center;">
+            </div>
+
+            <!-- Replace with desert dunes at sunset or aerial transition image (blue to sand mood contrast) -->
+            <div class="ph hero-card-c real-photo" data-parallax data-speed="0.0" role="img" aria-label="Chefchaouen alley at blue hour"
+              style="background-image:url('images/sahara-hero.jpg'); background-size:cover; background-position:center;">
+            </div>
+
+            <!--<div class="floating-label one" aria-hidden="true">Chefchaouen <small>basecamp & departure rhythm</small></div>
+            <div class="floating-label two" aria-hidden="true">Custom routes <small>curated, not generic listings</small></div>
+            <div class="floating-label three" aria-hidden="true">Blue → Medina → Desert <small>editorial travel flow</small></div>
+          --></div>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true"><i></i> Scroll to follow the route</div>
+    </section>
+<!--
+    <div class="marquee" aria-label="Route destinations">
+      <div class="marquee-track">
+        <span class="marquee-item">Chefchaouen Basecamp</span>
+        <span class="marquee-item">Akchour Waterfalls & Trails</span>
+        <span class="marquee-item">Fes Medina Depth</span>
+        <span class="marquee-item">Rabat Coastal Calm</span>
+        <span class="marquee-item">Marrakech Energy & Design</span>
+        <span class="marquee-item">Sahara Golden Silence</span>
+        <span class="marquee-item">Curated Morocco Itineraries</span>
+        <span class="marquee-item">Chefchaouen Basecamp</span>
+        <span class="marquee-item">Akchour Waterfalls & Trails</span>
+        <span class="marquee-item">Fes Medina Depth</span>
+        <span class="marquee-item">Rabat Coastal Calm</span>
+        <span class="marquee-item">Marrakech Energy & Design</span>
+        <span class="marquee-item">Sahara Golden Silence</span>
+        <span class="marquee-item">Curated Morocco Itineraries</span>
+      </div>
+    </div>-->
+
+    <section class="panel basecamp" id="basecamp" aria-labelledby="basecamp-title">
+      <div class="container basecamp-grid">
+        <div class="glass-card basecamp-copy reveal">
+          <div class="kicker-row">
+            <span class="eyebrow"><span class="eyebrow-dot"></span>From Chefchaouen</span>
+            <span class="mini-tag">premium route design</span>
+            <span class="mini-tag">visual storytelling</span>
+          </div>
+
+          <h2 class="section-title" id="basecamp-title">
+            The <span class="gradient-text">Blue City</span> is your opening scene.
+          </h2>
+
+          <p>
+            We position Chefchaouen as a <strong>living basecamp</strong>: slower mornings, photogenic alleys, mountain air — then we expand your route outward into Morocco with intentional transitions, not rushed checklists.
+          </p>
+          <p>
+            This creates a journey that feels cohesive: <em>blue medina calm → nature in Akchour → historic depth in Fes → royal elegance in Rabat → Marrakech intensity → Sahara stillness</em>.
+          </p>
+
+          <div class="stats-row" aria-label="Brand positioning highlights">
+            <div class="stat">
+              <strong>Chefchaouen-first</strong>
+              <span>Identity-led routes rooted in the Blue City experience.</span>
+            </div>
+            <div class="stat">
+              <strong>Curated flow</strong>
+              <span>Trip pacing designed around mood, distance, and energy.</span>
+            </div>
+            <div class="stat">
+              <strong>Custom requests</strong>
+              <span>Personalized itineraries via WhatsApp + travel inquiry form.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card route-map reveal" aria-label="Route overview from Chefchaouen">
+          <div class="route-line">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              <defs>
+                <linearGradient id="routeStroke" x1="0" x2="1">
+                  <stop offset="0%" stop-color="#2d95ee"/>
+                  <stop offset="65%" stop-color="#5eb2ff"/>
+                  <stop offset="100%" stop-color="#d6b26a"/>
+                </linearGradient>
+              </defs>
+              <path d="M10,18 C20,22 24,28 28,34 C34,43 46,38 56,46 C64,53 60,66 44,68 C58,69 65,72 70,76 C77,82 84,83 88,88"
+                    fill="none" stroke="url(#routeStroke)" stroke-width="2.6" stroke-linecap="round" stroke-dasharray="4 3">
+                <animate attributeName="stroke-dashoffset" from="0" to="-60" dur="9s" repeatCount="indefinite" />
+              </path>
+              <g fill="#166fcb" opacity=".9">
+                <circle cx="10" cy="18" r="2.2"/>
+                <circle cx="28" cy="34" r="1.8"/>
+                <circle cx="56" cy="46" r="1.8"/>
+                <circle cx="44" cy="68" r="1.8"/>
+                <circle cx="70" cy="76" r="1.8"/>
+                <circle cx="88" cy="88" r="2.2" fill="#d6b26a"/>
+              </g>
+            </svg>
+
+            <div class="route-tag tag-chef">Chefchaouen <small>basecamp</small></div>
+            <div class="route-tag tag-akch">Akchour <small>nature break</small></div>
+            <div class="route-tag tag-fes">Fes <small>medina depth</small></div>
+            <div class="route-tag tag-rabat">Rabat <small>coastal calm</small></div>
+            <div class="route-tag tag-marr">Marrakech <small>energy</small></div>
+            <div class="route-tag tag-saha">Sahara <small>warm finale</small></div>
+          </div>
+
+          <div class="basecamp-mosaic" aria-label="Chefchaouen and route visual placeholders">
+            <!-- Replace with wide scenic rooftop view of Chefchaouen (blue roofs + mountains), daylight -->
+<!-- Wide Chefchaouen Rooftop Panorama -->
+            <div class="ph hero-panorama real-photo"
+                data-parallax
+                data-speed="0.04"
+                role="img"
+                aria-label="Chefchaouen rooftop panorama with layered blue houses and Rif mountains"
+                style="background-image:url('images/Sleeping-cat.jpg'); background-size:cover; background-position:center;">
+            </div>
+
+            <div class="mosaic-col">
+                         <div class="ph hero-panorama real-photo"
+                data-parallax
+                data-speed="0.00"
+                role="img"
+                aria-label="Chefchaouen rooftop panorama with layered blue houses and Rif mountains"
+                style="background-image:url('images/chaouen2.jpg'); background-size:cover; background-position:center;">
+            </div>
+              <!-- Replace with road/van transition image leaving Chefchaouen toward Morocco route -->
+                          <div class="ph hero-panorama real-photo"
+                data-parallax
+                data-speed="0.04"
+                role="img"
+                aria-label="Chefchaouen rooftop panorama with layered blue houses and Rif mountains"
+                style="background-image:url('images/chaouen1.jpg'); background-size:cover; background-position:center;">
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel routes" id="routes" aria-labelledby="routes-title">
+      <div class="container routes-wrap">
+        <div class="routes-header reveal">
+          <div>
+            <div class="eyebrow"><span class="eyebrow-dot"></span>Signature route ideas</div>
+            <h2 class="section-title" id="routes-title" style="margin-top:.6rem;">Curated journeys, <span class="soft">not generic packages.</span></h2>
+          </div>
+          <p class="lead" style="max-width:42ch; margin:0;">
+            Use these as brand-led starting points. Each route is customizable by pace, travel style, budget, and number of travelers.
+          </p>
+        </div>
+
+        <div class="routes-grid">
+          <article class="route-card reveal" aria-labelledby="route1-title">
+<div class="ph hero-panorama real-photo"
+                data-parallax
+                data-speed="0.04"
+                role="img"
+                aria-label="Chefchaouen rooftop panorama with layered blue houses and Rif mountains"
+                style="background-image:url('Images/CHEFchaouen-hero.jpg'); background-size:cover; background-position:center; min-height: 200px;">
+            </div>
+            
+            <div class="route-meta">
+              <span>2–4 days</span><span>Nature + photogenic</span><span>Slow pace</span>
+            </div>
+            <h3 id="route1-title">The Blue & Water Route</h3>
+            <p>
+              A soft landing into northern Morocco: Chefchaouen atmosphere, local corners, sunrise/sunset views, and a refreshing Akchour escape with waterfall or bridge hikes.
+            </p>
+          </article>
+
+          <article class="route-card reveal" aria-labelledby="route2-title">
+<div class="ph hero-panorama real-photo"
+                data-parallax
+                data-speed="0.04"
+                role="img"
+                aria-label="Chefchaouen rooftop panorama with layered blue houses and Rif mountains"
+                style="background-image:url('images/architecture.jpg'); background-size:cover; background-position:center; min-height: 200px;">
+            </div>  
+            <div class="route-meta">
+              <span>4–6 days</span><span>Culture + architecture</span><span>Balanced pace</span>
+            </div>
+            <h3 id="route2-title">The Medina & Capital Flow</h3>
+            <p>
+              Start in blue mountain calm, then descend into the depth of Fes and finish in Rabat’s clean royal-coastal elegance for a refined northern circuit.
+            </p>
+          </article>
+
+          <article class="route-card reveal" aria-labelledby="route3-title">
+<div class="ph hero-panorama real-photo"
+                data-parallax
+                data-speed="0.04"
+                role="img"
+                aria-label="Chefchaouen rooftop panorama with layered blue houses and Rif mountains"
+                style="background-image:url('images/desert.jpg'); background-size:cover; background-position:center; min-height: 200px;">
+            </div>
+            <div class="route-meta">
+              <span>7–12 days</span><span>Iconic Morocco</span><span>Blue-to-sand contrast</span>
+            </div>
+            <h3 id="route3-title">The Full Shade Grand Route</h3>
+            <p>
+              A premium story arc across Morocco: Chefchaouen basecamp, imperial energy, Marrakech color, and a Sahara finale designed for unforgettable transitions.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div id="destinations" aria-hidden="true"></div>
+
+<!-- 
+    
+    <section class="panel story" aria-labelledby="chefchaouen-title">
+      <div class="container story-layout">
+        <div class="story-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span>Destination story — Chefchaouen</div>
+          <h2 id="chefchaouen-title">Chefchaouen <span class="soft">/ the blue anchor</span></h2>
+          <p>
+            This is the emotional center of the brand: a city of gradients, quiet steps, and textures. Use it as the opening atmosphere for your route — not just a quick photo stop.
+          </p>
+          <div class="story-points" aria-label="Chefchaouen highlights">
+            <span>Blue alleys, rooftop views, mountain light</span>
+            <span>Slow mornings and cinematic walking routes</span>
+            <span>Ideal starting point for Akchour / Fes transitions</span>
+          </div>
+        </div>
+
+        <div class="story-visual reveal" aria-label="Chefchaouen image placeholders">
+          <div class="ph main" data-parallax data-speed="0.05" role="img" aria-label="Placeholder: Chefchaouen main alley frame">
+            <div class="ph__inner">
+              <div class="ph__title">Chefchaouen Main Editorial Frame</div>
+              <div class="ph__hint">Replace with a high-quality alley shot with depth lines, stairs, and rich blue texture layering.</div>
+            </div>
+          </div>
+          <div class="side">
+            <div class="ph" data-parallax data-speed="0.08" role="img" aria-label="Placeholder: Chefchaouen rooftop view">
+              <div class="ph__inner"><div class="ph__title">Rooftop View</div><div class="ph__hint">Replace with skyline + mountain depth.</div></div>
+            </div>
+            <div class="ph" data-parallax data-speed="0.1" role="img" aria-label="Placeholder: Chefchaouen detail lifestyle">
+              <div class="ph__inner"><div class="ph__title">Blue Detail / Lifestyle</div><div class="ph__hint">Replace with intimate editorial texture shot.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel story" aria-labelledby="akchour-title">
+      <div class="container story-layout reverse">
+        <div class="story-visual reveal" aria-label="Akchour image placeholders">
+          <div class="ph main" data-parallax data-speed="0.05" role="img" aria-label="Placeholder: Akchour waterfalls main frame">
+            <div class="ph__inner">
+              <div class="ph__title">Akchour Main Nature Frame</div>
+              <div class="ph__hint">Replace with waterfall, river crossing, or canyon path image showing cool movement.</div>
+            </div>
+          </div>
+          <div class="side">
+            <div class="ph" data-parallax data-speed="0.08" role="img" aria-label="Placeholder: Akchour trail">
+              <div class="ph__inner"><div class="ph__title">Trail Energy</div><div class="ph__hint">Replace with hiking/trail movement shot.</div></div>
+            </div>
+            <div class="ph" data-parallax data-speed="0.1" role="img" aria-label="Placeholder: Akchour water texture">
+              <div class="ph__inner"><div class="ph__title">Water Texture</div><div class="ph__hint">Replace with close-up stream/rock detail.</div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span>Destination story — Akchour</div>
+          <h2 id="akchour-title">Akchour <span class="soft">/ cool movement</span></h2>
+          <p>
+            Akchour gives the brand a natural counterpoint to Chefchaouen’s urban blues — waterfalls, trails, rock textures, and mountain freshness. It keeps the itinerary dynamic without losing the northern identity.
+          </p>
+          <div class="story-points">
+            <span>Perfect day-trip or overnight extension from Chefchaouen</span>
+            <span>Waterfalls, bridge trails, and river-side pauses</span>
+            <span>Adds motion and outdoor contrast to a blue-city route</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel story" aria-labelledby="fes-title">
+      <div class="container story-layout">
+        <div class="story-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span>Destination story — Fes</div>
+          <h2 id="fes-title">Fes <span class="soft">/ depth, craft, memory</span></h2>
+          <p>
+            Fes is where the route deepens: dense medina passages, artisan work, historical texture, and immersive city rhythm. The transition from Chefchaouen feels intentional — from calm blues into layered heritage.
+          </p>
+          <div class="story-points">
+            <span>Medina immersion and artisan traditions</span>
+            <span>Architectural detail and atmospheric walking scenes</span>
+            <span>Excellent bridge between north and central Morocco</span>
+          </div>
+        </div>
+
+        <div class="story-visual reveal" aria-label="Fes image placeholders">
+          <div class="ph main" data-parallax data-speed="0.05" role="img" aria-label="Placeholder: Fes medina main frame">
+            <div class="ph__inner"><div class="ph__title">Fes Medina Main Frame</div><div class="ph__hint">Replace with deep medina lane, warm stone, cool shadow contrast.</div></div>
+          </div>
+          <div class="side">
+            <div class="ph" data-parallax data-speed="0.08" role="img" aria-label="Placeholder: Fes artisan detail">
+              <div class="ph__inner"><div class="ph__title">Craft Detail</div><div class="ph__hint">Replace with zellige / brass / wood work close-up.</div></div>
+            </div>
+            <div class="ph" data-parallax data-speed="0.1" role="img" aria-label="Placeholder: Fes skyline viewpoint">
+              <div class="ph__inner"><div class="ph__title">Medina Panorama</div><div class="ph__hint">Replace with rooftop or hilltop city layers.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel story" aria-labelledby="rabat-title">
+      <div class="container story-layout reverse">
+        <div class="story-visual reveal" aria-label="Rabat image placeholders">
+          <div class="ph main" data-parallax data-speed="0.05" role="img" aria-label="Placeholder: Rabat coastal-royal frame">
+            <div class="ph__inner"><div class="ph__title">Rabat Main Frame</div><div class="ph__hint">Replace with coastal + architectural image conveying calm and refinement.</div></div>
+          </div>
+          <div class="side">
+            <div class="ph" data-parallax data-speed="0.08" role="img" aria-label="Placeholder: Oudayas detail">
+              <div class="ph__inner"><div class="ph__title">Oudayas Detail</div><div class="ph__hint">Replace with blue-white architectural texture.</div></div>
+            </div>
+            <div class="ph" data-parallax data-speed="0.1" role="img" aria-label="Placeholder: Rabat modern-classic contrast">
+              <div class="ph__inner"><div class="ph__title">Modern / Royal Contrast</div><div class="ph__hint">Replace with elegant city scene and clean lines.</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="story-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span>Destination story — Rabat</div>
+          <h2 id="rabat-title">Rabat <span class="soft">/ coastal clarity</span></h2>
+          <p>
+            Rabat adds a refined pause in the route — less crowded energy, more clean geometry, coastal air, and elegant transitions. It pairs beautifully with Fes and Chefchaouen in a premium northern itinerary.
+          </p>
+          <div class="story-points">
+            <span>Royal architecture and coastal softness</span>
+            <span>A calmer counterpoint before Marrakech</span>
+            <span>Excellent for design-forward travelers</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel story" aria-labelledby="marrakech-title">
+      <div class="container story-layout">
+        <div class="story-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span>Destination story — Marrakech</div>
+          <h2 id="marrakech-title">Marrakech <span class="soft">/ energy and color</span></h2>
+          <p>
+            Marrakech brings pulse, design, and contrast. After the cool blues of Chefchaouen, it feels vivid and unforgettable — ideal for travelers who want atmosphere, architecture, gardens, and iconic city energy.
+          </p>
+          <div class="story-points">
+            <span>Design hotels, souks, gardens, and city rhythm</span>
+            <span>Ideal hub before heading toward the Sahara</span>
+            <span>Warm palette contrast to the brand’s blue identity</span>
+          </div>
+        </div>
+        <div class="story-visual reveal" aria-label="Marrakech image placeholders">
+          <div class="ph main" data-parallax data-speed="0.05" role="img" aria-label="Placeholder: Marrakech main frame">
+            <div class="ph__inner"><div class="ph__title">Marrakech Main Frame</div><div class="ph__hint">Replace with a rich warm-toned image that contrasts beautifully with the blue brand palette.</div></div>
+          </div>
+          <div class="side">
+            <div class="ph" data-parallax data-speed="0.08" role="img" aria-label="Placeholder: Marrakech design detail">
+              <div class="ph__inner"><div class="ph__title">Design Detail</div><div class="ph__hint">Replace with lantern, tile, or courtyard texture shot.</div></div>
+            </div>
+            <div class="ph" data-parallax data-speed="0.1" role="img" aria-label="Placeholder: Marrakech skyline dusk">
+              <div class="ph__inner"><div class="ph__title">Evening Skyline</div><div class="ph__hint">Replace with sunset rooftop or skyline silhouette scene.</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel story" aria-labelledby="sahara-title">
+      <div class="container story-layout reverse">
+        <div class="story-visual reveal" aria-label="Sahara image placeholders">
+          <div class="ph main" data-parallax data-speed="0.05" role="img" aria-label="Placeholder: Sahara dunes golden hour">
+            <div class="ph__inner"><div class="ph__title">Sahara Finale Frame</div><div class="ph__hint">Replace with golden dunes at sunset or sunrise for a cinematic route ending.</div></div>
+          </div>
+          <div class="side">
+            <div class="ph" data-parallax data-speed="0.08" role="img" aria-label="Placeholder: Sahara movement">
+              <div class="ph__inner"><div class="ph__title">Desert Movement</div><div class="ph__hint">Replace with caravan / tracks / silhouette motion scene.</div></div>
+            </div>
+            <div class="ph" data-parallax data-speed="0.1" role="img" aria-label="Placeholder: Sahara camp detail">
+              <div class="ph__inner"><div class="ph__title">Camp Detail / Night Mood</div><div class="ph__hint">Replace with tent detail or atmospheric night setup shot.</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="story-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span>Destination story — Sahara</div>
+          <h2 id="sahara-title">Sahara <span class="soft">/ the warm final shade</span></h2>
+          <p>
+            The desert completes the brand story: from blue walls and cool mountain light to silence, gold, and horizon. It’s the emotional finale that makes the entire route feel cinematic and complete.
+          </p>
+          <div class="story-points">
+            <span>Blue-to-sand narrative contrast</span>
+            <span>Sunset, sunrise, and stargazing moments</span>
+            <span>Ideal ending for premium multi-city itineraries</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+-->
+    <section class="panel process" aria-labelledby="process-title">
+      <div class="container process-grid">
+        <div class="glass-card process-copy reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span>How Fiftyshadesofblue.ma works</div>
+          <h2 class="section-title" id="process-title">A <span class="gradient-text">designed route</span>, not a random list.</h2>
+          <p class="lead" style="margin:0; max-width:55ch;">
+            Your homepage should communicate that every itinerary is crafted around <strong>rhythm, transitions, and mood</strong> — especially when starting from Chefchaouen.
+          </p>
+
+          <div class="steps" aria-label="Trip design process">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div>
+                <h4>Tell us your travel style</h4>
+                <p>Photography-focused, relaxed, romantic, cultural immersion, road-trip energy, luxury comfort, or mixed.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div>
+                <h4>We build a route from Chefchaouen outward</h4>
+                <p>We shape your journey starting with the Blue City identity and connect destinations with smooth timing and sensible flow.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div>
+                <h4>Refine the details</h4>
+                <p>Dates, traveler count, route preferences, comfort level, and must-see moments are tuned before final confirmation.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-cta-group">
+            <a class="btn btn-primary" href="#contact">Start custom trip request</a>
+            <a class="btn btn-whatsapp" href="https://wa.me/212621919370?text=Salam%20Imad%20-%20I%20want%20a%20custom%20Morocco%20itinerary%20starting%20from%20Chefchaouen" target="_blank" rel="noopener noreferrer">WhatsApp Imad</a>
+          </div>
+        </div>
+
+        <div class="glass-card process-visual reveal" aria-label="Brand feel and process placeholders">
+<div class="hero-mini-gallery" aria-label="Destination photo gallery">
+  <div class="gallery-main">
+    <img id="galleryMainImage"
+         src="images/chefchaouen-dusk.jpg"
+         alt="Chefchaouen blue city at twilight">
+
+    <div class="gallery-overlay">
+      <span id="galleryMainTag">Chefchaouen</span>
+      <p id="galleryMainCaption">
+        Fifty shades of blue glowing at twilight.
+      </p>
+    </div>
+  </div>
+
+  <div class="gallery-strip" id="galleryStrip">
+    <!-- Replace each src + labels with real images -->
+    <button class="g-thumb is-active"
+    data-src="images/chefchaouen-dusk.jpg"
+        data-alt="Chefchaouen blue city at twilight"
+        data-tag="Chefchaouen"
+        data-caption="Fifty shades of blue glowing at twilight."
+        aria-label="Show Chefchaouen dusk photo">
+      <img src="images/chefchaouen-dusk.jpg" alt="">
+    </button>
+<!-- Atlas Rock Canyon -->
+<button class="g-thumb"
+        data-src="images/mountain.jpg"
+        data-alt="Sunlight over red Atlas rock formations and green valley"
+        data-tag="Atlas Mountains"
+        data-caption="Wild Atlas canyons, red stone cliffs and hidden green valleys."
+        aria-label="Show Atlas canyon photo">
+  <img src="images/mountain.jpg" alt="">
+</button>
+
+<!-- Berber Village in the Mountains -->
+<button class="g-thumb"
+        data-src="images/berber-village.jpg"
+        data-alt="Traditional Berber village with mosque and layered mountains"
+        data-tag="Berber Villages"
+        data-caption="Earth-built villages carved into layered mountain landscapes."
+        aria-label="Show Berber village photo">
+  <img src="images/berber-village.jpg" alt="">
+</button>
+
+<button class="g-thumb"
+        data-src="images/moroccan-pigments.jpg"
+        data-alt="Colorful pigment sacks in Moroccan market"
+        data-tag="Souks & Culture"
+        data-caption="Hand-ground pigments and the textures of Moroccan craft."
+        aria-label="Show souk pigments photo">
+  <img src="images/moroccan-pigments.jpg" alt="">
+</button>
+
+<!-- Dades Gorge Road -->
+<button class="g-thumb"
+        data-src="images/dades-gorge-road.jpg"
+        data-alt="Winding mountain road through dramatic canyon"
+        data-tag="Dades Gorge"
+        data-caption="Iconic serpentine roads cutting through dramatic canyon walls."
+        aria-label="Show Dades gorge road photo">
+  <img src="images/dades-gorge-road.jpg" alt="">
+</button>
+
+<!-- Desert Camp Night -->
+<button class="g-thumb"
+        data-src="images/desert-camp-night.jpg"
+        data-alt="Luxury desert camp under starry sky"
+        data-tag="Sahara Experience"
+        data-caption="Starlit silence, lantern light and private desert camps."
+        aria-label="Show Sahara camp night photo">
+  <img src="images/desert-camp-night.jpg" alt="">
+</button>
+
+<!-- Desert Camp Ceremony Setup -->
+<button class="g-thumb"
+        data-src="images/desert-lantern-evening.jpg"
+        data-alt="Lantern-lit desert gathering at dusk"
+        data-tag="Sahara Nights"
+        data-caption="Golden lantern evenings surrounded by palm silhouettes."
+        aria-label="Show Sahara lantern evening photo">
+  <img src="images/desert-lantern-evening.jpg" alt="">
+</button>
+
+<!-- Palm Oasis & Village -->
+<button class="g-thumb"
+        data-src="images/oasis-village.jpg"
+        data-alt="Palm oasis village beneath canyon cliffs"
+        data-tag="Oasis"
+        data-caption="Palm groves and river valleys beneath towering canyon walls."
+        aria-label="Show oasis village photo">
+  <img src="images/oasis-village.jpg" alt="">
+</button>
+
+<!-- Coastal Blue Boats -->
+<button class="g-thumb"
+        data-src="images/coastal-blue-boats.jpeg"
+        data-alt="Blue fishing boats on Atlantic beach"
+        data-tag="Atlantic Coast"
+        data-caption="Atlantic breeze, blue boats and golden sand mornings."
+        aria-label="Show Atlantic coast photo">
+  <img src="images/coastal-blue-boats.jpeg" alt="">
+</button>
+
+<!-- Colorful Market Pigments -->
+
+
+    <!-- Add as many more thumbnails as you want -->
+  </div>
+</div>
+
+          <div class="micro-grid">
+            <div class="micro-card">
+              <strong>Blue-first identity</strong>
+              <span>Chefchaouen is the visual and emotional anchor across the homepage.</span>
+            </div>
+            <div class="micro-card">
+              <strong>Visual storytelling</strong>
+              <span>Use real photography later to replace placeholders and keep the cinematic sequence.</span>
+            </div>
+            <div class="micro-card">
+              <strong>Conversion path</strong>
+              <span>Clear WhatsApp CTA + structured inquiry form for custom trip requests.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="glass-card contact-left reveal">
+          <div class="eyebrow"><span class="eyebrow-dot"></span>Plan your custom Morocco route</div>
+          <h2 class="section-title" id="contact-title">Contact <span class="gradient-text">Us </span></h2>
+          <p>
+            Prefer WhatsApp? Message Imad directly for a fast conversation. Prefer a structured request? Use the form to share your dates, route ideas, and travel style.
+          </p>
+
+          <div class="imad-card" aria-label="WhatsApp contact details">
+            <strong>WhatsApp Contact — IMAD BOULHAJJAJ</strong>
+            <div class="line"><span>Number:</span> <a class="muted-link" href="tel:+212621919370">+212 621-919370</a></div>
+            <div class="small">Chefchaouen-based trip planning • custom itineraries • route guidance</div>
+            <div class="contact-cta-group">
+              <a class="btn btn-whatsapp" href="https://wa.me/212621919370?text=Salam%20Imad%20-%20I%20found%20Fiftyshadesofblue.ma%20and%20want%20help%20planning%20a%20trip" target="_blank" rel="noopener noreferrer">
+                Message on WhatsApp
+              </a>
+              <a class="btn btn-primary" href="#inquiry-form">Fill the trip form</a>
+              <a class="btn btn-secondary" href="mailto:info@fiftyshadesofblue.ma?subject=Trip%20Planning%20Request%20-%20Fiftyshadesofblue.ma&body=Salam%20Imad%20-%20I%20found%20Fiftyshadesofblue.ma%20and%20would%20love%20help%20planning%20a%20trip%20in%20Morocco.%0A%0AI%27m%20interested%20in:%0A-%20Preferred%20dates:%0A-%20Number%20of%20travelers:%0A-%20Cities%20I%27d%20like%20to%20visit:%0A-%20Travel%20style:%0A%0ALooking%20forward%20to%20hearing%20from%20you.">E-mail</a>
+              
+            </div>
+          </div>
+
+          <div class="contact-visual" aria-label="Contact section visual placeholders">
+<!-- Brand Human Touch: replace with Imad/team lifestyle OR Chefchaouen planning scene -->
+<div class="ph real-photo"
+     role="img"
+     aria-label="Imad or team planning a custom Morocco trip in Chefchaouen"
+     style="background-image:url('images/brand-human-touch.jpeg'); background-size:cover; background-position:center;">
+</div>
+
+<div class="side">
+  <!-- Trip Moodboard: map / notebook / blue textures / itinerary planning -->
+  <div class="ph real-photo"
+       role="img"
+       aria-label="Morocco travel planning moodboard with map and notebook"
+       style="background-image:url('images/trip-moodboard.jpg'); background-size:cover; background-position:center;">
+  </div>
+
+  <!-- Route Planning Mood: road / transfer / scenic journey visual -->
+  <div class="ph real-photo"
+       role="img"
+       aria-label="Scenic Morocco road journey visual"
+       style="background-image:url('images/route-planning-road.jpeg'); background-size:cover; background-position:center;">
+  </div>
+</div>
+          </div>
+        </div>
+
+        <div class="glass-card contact-right reveal">
+          <div class="kicker-row">
+            <span class="eyebrow"><span class="eyebrow-dot"></span>Travel inquiry form</span>
+          </div>
+          <p>
+            Share your travel brief and we’ll reply with a curated proposal.
+          </p>
+
+          <!-- FORM NOTE: Replace YOUR_FORMSPREE_ID with your real Formspree endpoint (example: f/abcxyzpq) -->
+<form id="inquiry-form" action="https://submit-form.com/2ubd5eqec" method="POST">
+  <!-- Formspark endpoint format:
+       Replace YOUR_FORMSPARK_FORM_ID with your real Formspark form ID -->
+
+         <!-- Redirect after successful submission -->
+  <input type="hidden" name="_redirect" value="https://fiftyshadesofblue.ma/thank-you.html" />
+  <!-- Prevent query params like ?email=... from being appended -->
+  <input type="hidden" name="_append" value="false" />
+
+  <!-- Optional: custom error page (otherwise Formspark uses _redirect config) -->
+  <input type="hidden" name="_error" value="https://fiftyshadesofblue.ma/error.html" />
+
+  <input type="hidden" name="source_page" value="Homepage" />
+  <input type="hidden" name="form_subject" value="New travel inquiry — Fiftyshadesofblue.ma" />
+
+  <div class="field-grid">
+    <div class="field">
+      <label for="name">Full name *</label>
+      <input id="name" name="name" type="text" placeholder="Your name" required />
+    </div>
+    <div class="field">
+      <label for="email">Email *</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required />
+    </div>
+  </div>
+
+  <div class="field-grid">
+    <div class="field">
+      <label for="whatsapp">WhatsApp / Phone</label>
+      <input id="whatsapp" name="whatsapp" type="tel" placeholder="+212 ..." />
+    </div>
+    <div class="field">
+      <label for="travelers">Number of travelers *</label>
+      <select id="travelers" name="travelers" required>
+        <option value="" selected disabled>Select</option>
+        <option>1 traveler</option>
+        <option>2 travelers</option>
+        <option>3-4 travelers</option>
+        <option>5-8 travelers</option>
+        <option>9+ travelers</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="field-grid">
+    <div class="field">
+      <label for="start-date">Preferred start date</label>
+      <input id="start-date" name="start_date" type="date" />
+    </div>
+    <div class="field">
+      <label for="duration">Trip duration</label>
+      <select id="duration" name="duration">
+        <option value="" selected disabled>Select duration</option>
+        <option>2-4 days</option>
+        <option>5-7 days</option>
+        <option>8-10 days</option>
+        <option>11-14 days</option>
+        <option>15+ days</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="field-grid">
+    <div class="field">
+      <label for="route">Desired route / destinations *</label>
+      <select id="route" name="desired_route" required>
+        <option value="" selected disabled>Select a route idea</option>
+        <option>Chefchaouen + Akchour</option>
+        <option>Chefchaouen + Fes + Rabat</option>
+        <option>Chefchaouen + Marrakech + Sahara</option>
+        <option>Custom multi-city route</option>
+        <option>Not sure yet — need suggestions</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label for="start-city">Arrival / starting city (optional)</label>
+      <input id="start-city" name="arrival_city" type="text" placeholder="Tangier, Casablanca, Fes..." />
+    </div>
+  </div>
+
+  <div class="field">
+    <label for="message">Trip details / what you want to experience *</label>
+    <textarea id="message" name="message" placeholder="Tell us your preferred route, dates, vibe, interests, accommodation style, and any must-see places..." required></textarea>
+  </div>
+
+  <div class="form-actions">
+    <button class="btn btn-primary" type="submit">Send inquiry</button>
+    <a class="btn btn-whatsapp" href="https://wa.me/212621919370?text=Salam%20Imad%20-%20I%20just%20submitted%20a%20trip%20inquiry%20on%20Fiftyshadesofblue.ma" target="_blank" rel="noopener noreferrer">Or confirm via WhatsApp</a>
+    <a class="btn btn-secondary" href="mailto:info@fiftyshadesofblue.ma?subject=Trip%20Inquiry%20Submitted%20-%20Fiftyshadesofblue.ma&body=Salam%20Imad%20-%20I%20just%20submitted%20a%20trip%20inquiry%20on%20Fiftyshadesofblue.ma.%0A%0AI%20would%20love%20to%20confirm%20and%20discuss%20the%20details.%0A%0AThank%20you.">Or via E-mail</a>
+  
+  </div>
+</form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2 class="footer-title">Fiftyshadesofblue.ma</h2>
+          <p class="footer-copy">
+            Chefchaouen-based Morocco travel design — creating routes that move from the Blue City into Morocco’s medinas, coastlines, and desert in a refined, cinematic flow.
+          </p>
+        </div>
+        <div class="footer-links" aria-label="Footer links">
+          <a href="#basecamp">Why Chefchaouen as basecamp</a>
+          <a href="#routes">Signature route ideas</a>
+          <a href="#destinations">Destinations</a>
+          <a href="#contact">WhatsApp + inquiry form</a>
+          <a href="https://wa.me/212621919370?text=Salam%20Imad%20-%20I%20want%20to%20plan%20a%20Morocco%20trip" target="_blank" rel="noopener noreferrer">Message IMAD BOULHAJJAJ on WhatsApp</a>
+          <a href="mailto:info@fiftyshadesofblue.ma?subject=Trip%20Planning%20Request%20-%20Fiftyshadesofblue.ma&body=Salam%20Imad%20-%20I%20found%20Fiftyshadesofblue.ma%20and%20would%20love%20help%20planning%20a%20trip%20in%20Morocco.%0A%0AI%27m%20interested%20in:%0A-%20Preferred%20dates:%0A-%20Number%20of%20travelers:%0A-%20Cities%20I%27d%20like%20to%20visit:%0A-%20Travel%20style:%0A%0ALooking%20forward%20to%20hearing%20from%20you.">
+  Email to plan a trip
+</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> Fiftyshadesofblue.ma — From the Blue City to Morocco in every shade.</span>
+        <span>Designed by Dmsapl Media. All rights reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const header = document.getElementById('siteHeader');
+      const scrollBar = document.getElementById('scrollBar');
+      const root = document.documentElement;
+      const hero = document.querySelector('.hero');
+      const year = document.getElementById('year');
+      if (year) year.textContent = new Date().getFullYear();
+
+      const onScroll = () => {
+        const y = window.scrollY || window.pageYOffset;
+        header.classList.toggle('is-scrolled', y > 12);
+
+        const doc = document.documentElement;
+        const max = doc.scrollHeight - window.innerHeight;
+        const progress = max > 0 ? (y / max) * 100 : 0;
+        if (scrollBar) scrollBar.style.width = progress.toFixed(2) + '%';
+
+        document.querySelectorAll('[data-parallax]').forEach(el => {
+          const speed = parseFloat(el.dataset.speed || '0.06');
+          const rect = el.getBoundingClientRect();
+          const vh = window.innerHeight;
+          const centerOffset = (rect.top + rect.height / 2) - vh / 2;
+          const translateY = -centerOffset * speed;
+          el.style.transform = `translate3d(0, ${translateY.toFixed(1)}px, 0)`;
+        });
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) entry.target.classList.add('is-visible');
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+
+      document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+      let rafId = null;
+      const scheduleScroll = () => {
+        if (rafId) return;
+        rafId = requestAnimationFrame(() => {
+          onScroll();
+          rafId = null;
+        });
+      };
+      window.addEventListener('scroll', scheduleScroll, { passive: true });
+      window.addEventListener('resize', scheduleScroll);
+      onScroll();
+
+      if (hero) {
+        hero.addEventListener('pointermove', (e) => {
+          const rect = hero.getBoundingClientRect();
+          const x = ((e.clientX - rect.left) / rect.width) * 100;
+          const y = ((e.clientY - rect.top) / rect.height) * 100;
+          hero.style.setProperty('--cursor-x', x.toFixed(2) + '%');
+          hero.style.setProperty('--cursor-y', y.toFixed(2) + '%');
+        });
+      }
+
+      // Slight hover lift for route cards (without heavy tilt)
+      document.querySelectorAll('.route-card').forEach(card => {
+        card.addEventListener('pointermove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width;
+          const y = (e.clientY - rect.top) / rect.height;
+          const dx = (x - 0.5) * 6;
+          const dy = (y - 0.5) * -4;
+          card.style.transform = `translateY(-4px) rotateX(${dy.toFixed(2)}deg) rotateY(${dx.toFixed(2)}deg)`;
+        });
+        card.addEventListener('pointerleave', () => {
+          card.style.transform = '';
+        });
+      });
+    })();
+
+(function () {
+  const mainImg = document.getElementById('galleryMainImage');
+  const mainTag = document.getElementById('galleryMainTag');
+  const mainCaption = document.getElementById('galleryMainCaption');
+  const thumbs = document.querySelectorAll('.g-thumb');
+
+  thumbs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const src = btn.dataset.src;
+      const alt = btn.dataset.alt || '';
+      const tag = btn.dataset.tag || '';
+      const caption = btn.dataset.caption || '';
+
+      if (!src) return;
+
+      mainImg.style.opacity = '0.35';
+      setTimeout(() => {
+        mainImg.src = src;
+        mainImg.alt = alt;
+        mainTag.textContent = tag;
+        mainCaption.textContent = caption;
+        mainImg.style.opacity = '1';
+      }, 120);
+
+      thumbs.forEach(t => t.classList.remove('is-active'));
+      btn.classList.add('is-active');
+    });
+  });
+})();
+  </script>
+</body>
+</html>
